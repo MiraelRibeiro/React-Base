@@ -1,15 +1,16 @@
 import React from 'react';
-import Login from './pages/Login';
 import GlobalStyles from './styles/GlobalStyles';
 import Header from './components/Header';
+import Routes from './routes';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <React.Fragment>
+    <BrowserRouter>
       <Header />
-      <Login />
+      <Routes />
       <GlobalStyles />
-    </React.Fragment>
+    </BrowserRouter>
   );
 }
 
